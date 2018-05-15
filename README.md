@@ -180,9 +180,9 @@ $patchJson = <<<'JSON'
     {"value":4,"op":"test","path":"/key1/0"},
     {"value":5,"op":"replace","path":"/key1/0"},
     
-    {"op":"remove","path":"/key2"},
+    {"value":2,"op":"remove","path":"/key2"},
     
-    {"op":"remove","path":"/key3/sub0"},
+    {"value":0,"op":"remove","path":"/key3/sub0"},
     
     {"value":"a","op":"test","path":"/key3/sub1"},
     {"value":"c","op":"replace","path":"/key3/sub1"},
@@ -194,7 +194,7 @@ $patchJson = <<<'JSON'
 
     {"value":true,"op":"add","path":"/key4/0/subs/2/add"},
     
-    {"op":"remove","path":"/key4/1/b"},
+    {"value":false,"op":"remove","path":"/key4/1/b"},
     
     {"value":false,"op":"add","path":"/key4/1/c"},
     
